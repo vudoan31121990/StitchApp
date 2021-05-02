@@ -12,6 +12,7 @@ target 'StitchApp' do
     :hermes_enabled => false
   )
 
+
   target 'StitchAppTests' do
     inherit! :complete
     # Pods for testing

@@ -2,5 +2,5 @@ import React from 'react';
 import { Icon } from '@ui-kitten/components';
 
 export const UserIcon = (props) => (
-    <Icon {...props} name='person' />
+    <Icon {...props} name='person' fill="white"/>
 )
