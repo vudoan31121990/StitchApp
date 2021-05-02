@@ -4,14 +4,16 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { TabBar, Tab } from '@ui-kitten/components';
 import { HomePage, BookingPage, AccountPage } from '../../pages/index';
 import { HomeIcon, CalendarIcon, UserIcon } from '../../shared/icons/index';
+import { Header } from '../Header/Header';
 
 const { Navigator, Screen } = createMaterialTopTabNavigator();
 
 const TopTabBar = ({ navigation, state }) => (
     <React.Fragment>
         <TabBar
-            style={{ position: 'relative', top: 0 }}
+            style={{backgroundColor: '#040707'}}
             selectedIndex={state.index}
+            indicatorStyle={{width: 4, height: 2}}
             onSelect={index => navigation.navigate(state.routeNames[index])}>
             <Tab icon={HomeIcon} />
             <Tab icon={CalendarIcon} />
@@ -30,7 +32,12 @@ const TabNavigator = () => (
 );
 
 export const AppNavigator = () => (
-    <NavigationContainer>
-        <TabNavigator />
-    </NavigationContainer>
+    <>
+        <Header />
+        <NavigationContainer>
+
+            <TabNavigator />
+        </NavigationContainer>
+    </>
+    
 );
