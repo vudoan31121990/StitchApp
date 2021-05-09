@@ -89,6 +89,7 @@ export const ModalBooking = ({ nameService, title, isVisible, onClose }) => {
                         onChangeText={nextValue => setNote(nextValue)}
                     />
                     <Button
+                        activeOpacity={0.6}
                         style={styles.button}
                         disabled={disabled}>
                         BOOK
