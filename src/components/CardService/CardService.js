@@ -13,8 +13,20 @@ export const CardService = ({ src, nameService, title, description }) => {
             <Card.Title>{nameService}</Card.Title>
             <Card.Divider />
             <Card.Image source={src} />
-            <Button style={styles.link} appearance="ghost" status="info" onPress={() => setVisible(true)}>Read More</Button>
-            <Button style={styles.button} onPress={() => setVisibleBooking(true)}>Book Now</Button>
+            <Button
+                activeOpacity={0.6}
+                style={styles.link}
+                appearance="ghost"
+                status="info"
+                onPress={() => setVisible(true)}>
+                Read More
+            </Button>
+            <Button
+                activeOpacity={0.6}
+                style={styles.button}
+                onPress={() => setVisibleBooking(true)}>
+                Book Now
+            </Button>
             <ModalService
                 isVisible={isVisible}
                 onClose={() => setVisible(false)}

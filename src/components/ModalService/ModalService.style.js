@@ -25,6 +25,7 @@ export const styles = StyleSheet.create({
         marginRight: 50,
         marginBottom: 0,
         marginTop: 10,
-        backgroundColor: 'black'
+        backgroundColor: 'black',
+        borderColor: 'black'
     }
 })
